@@ -1,0 +1,10 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+docs/notebooks/data/
+docs/notebooks/tutorial_models/
+*.h5ad
+*.tsv
+*.pkl
+*.whl
+*.tar.gz
