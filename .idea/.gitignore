@@ -3,6 +3,7 @@
 /workspace.xml
 docs/notebooks/data/
 docs/notebooks/tutorial_models/
+docs/.ipynb_checkpoints/
 *.h5ad
 *.tsv
 *.pkl
