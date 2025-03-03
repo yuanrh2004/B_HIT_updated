@@ -113,6 +113,33 @@ def aggregate_neighbors(
 ) :
     """
     Aggregate the features from each neighborhood layers and concatenate them
+    
+    Parameters:
+    -----------
+    adata : AnnData
+        The annotated data matrix (single-cell dataset in AnnData format).
+    n_layers : int or list
+        The number of neighborhood layers to aggregate. If an integer is given, 
+        it is converted into a list ranging from 0 to `n_layers`.
+    aggregations : str or list, default="mean"
+        The type of aggregation(s) to perform (e.g., "mean", "sum").
+    connectivity_key : str, optional
+        Key in `adata.obsp` that contains the spatial connectivity matrix.
+    use_rep : str, optional
+        Key in `adata.obsm` that specifies which representation (feature matrix) to use. 
+        If `None`, the function uses `adata.X`.
+    sample_key : str, optional
+        Key in `adata.obs` that identifies sample/grouping information. If `None`, all 
+        cells are considered together.
+    out_key : str, default="X_cellcharter"
+        Key under which the aggregated features are stored in `adata.obsm`.
+    copy : bool, default=False
+        If True, returns the aggregated feature matrix instead of modifying `adata`.
+    
+    Returns:
+    --------
+    - If `copy` is True, returns the aggregated feature matrix as a numpy array or sparse matrix.
+    - Otherwise, modifies `adata.obsm` in place, storing the aggregated matrix under `out_key`.
     """
     connectivity_key = connectivity_key
     sample_key = Key.obs.sample if sample_key is None else sample_key
