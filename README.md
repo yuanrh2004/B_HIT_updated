@@ -3,8 +3,10 @@
 **A bioinformatics tool for joint analysis of spatial BCR and transcriptomic data.**
 
 ![B-HIT](./images/BHIT.png)
-<img src="https://github.com/yuanrh2004/B_HIT_updated/blob/master/docs/_static/workchart.png" width="400px">
-
+</p>
+<p align="center">
+  <img src="https://github.com/yuanrh2004/B_HIT_updated/blob/master/docs/_static/workchart.png" width="800px">
+</p>
 ## Background
 
   B cell Hub Identification and B cell Tracking by BCR
