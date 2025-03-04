@@ -7,7 +7,8 @@
 :maxdepth: 2
 :caption: API
 
-api.md
+st.md
+sVDJ.md
 ```
 
 ```{toctree}

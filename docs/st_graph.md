@@ -8,5 +8,6 @@
     :toctree: generated
 
     gr.aggregate_neighbors
+    gr.get_adj
 
 ```
