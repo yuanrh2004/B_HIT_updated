@@ -23,7 +23,8 @@
 2. pip install B_HIT
 
 ```bash
-conda create --name B_HIT python=3.10
+conda create --name B_HIT_env python=3.10
+conda activate B_HIT_env
 pip install B_HIT
 ```
 
