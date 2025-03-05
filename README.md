@@ -20,10 +20,11 @@
 
 
 1. Create a conda or pyenv environment
-2. pip install B_HIT
-
 ```bash
 conda create --name B_HIT_env python=3.10
+```
+2. pip install B_HIT
+```bash
 conda activate B_HIT_env
 pip install B_HIT
 ```
