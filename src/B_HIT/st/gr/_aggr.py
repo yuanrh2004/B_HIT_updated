@@ -114,7 +114,7 @@ def aggregate_neighbors(
     """
     Aggregate the features from each neighborhood layers and concatenate them
     
-    Parameters:
+    Parameters
     -----------
     adata : AnnData
         The annotated data matrix (single-cell dataset in AnnData format).
@@ -136,7 +136,7 @@ def aggregate_neighbors(
     copy : bool, default=False
         If True, returns the aggregated feature matrix instead of modifying `adata`.
     
-    Returns:
+    Returns
     --------
     - If `copy` is True, returns the aggregated feature matrix as a numpy array or sparse matrix.
     - Otherwise, modifies `adata.obsm` in place, storing the aggregated matrix under `out_key`.
